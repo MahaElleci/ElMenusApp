@@ -1,0 +1,15 @@
+{
+    "admins": [
+        {
+            "email": "hamed.farag@gmail.com",
+            "password": "1234"
+        }
+    ], 
+    "users": [ 
+        {
+            "email": "maha.elleci@gmail.com",
+            "password": "1234"
+        }
+
+    ]
+}
