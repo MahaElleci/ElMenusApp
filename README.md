@@ -23,4 +23,5 @@
 ## Enhancements to be done
 
  - [ ] Secure page routes -- /menuPage , /adminPage cannot be accessed without login 
- 
+ - [ ] Unit tests
+ - [ ] Redux and architecture docuemntation 
