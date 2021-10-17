@@ -111,7 +111,7 @@ const AdminPage = () => {
     <div className="admin-page">
       <Link
         to={{
-          pathname: "/usersPage",
+          pathname: "/menuPage",
           state: { isAdmin: location.state.isAdmin },
         }}
         className="backBtn"

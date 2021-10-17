@@ -46,7 +46,7 @@ const LoginPage = () => {
     }
 
     history.push({
-      pathname: "/usersPage",
+      pathname: "/menuPage",
       state: { isAdmin: isAdmin },
     });
   };

@@ -18,7 +18,7 @@ function App() {
           <Route path="/adminPage">
             <AdminPage />
           </Route> 
-          <Route path="/usersPage">
+          <Route path="/menuPage">
             <MenuPage />
           </Route> 
         </Switch> 

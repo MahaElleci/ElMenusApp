@@ -1,71 +1,26 @@
-# Getting Started with Create React App
+# El Menus App 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Features Checklist
+ - [x] **LaunchPage** -- users data is fetched and cached into local storage. Upon clikcing *Start App*, launch page routes to *LoginPage*
+ - [x] **LoginPage** -- users data is saved in browsers local storage to validate users credentials upon login. 
+ - [x] Login as an admin -- if the user is validated to be an admin, login page routes to **/menuPage** with a route location state where a flag (*isAdmin*) is set to true. An admin button is shown in menu page. 
+ - [x] Login as a user -- is the user is validated to be an existing user who is not an admin,  login page routes to **/menuPage** with a route location state where a flag (*isAdmin*) is set to false. An admin button is hidden in menu page. 
+ - [x] **MenuPage** -- shows a list of categories on the left, upon selecting a category item the menu items of that category is displayed on the right
+ - [x] **AdminPage** -- shows a form of adding a menu category on the left, on the right is the menu categories and menu items with *edit and delete* options. 
+ - [x] An admin can add a new category to the list of categories 
+ - [x] An admin can add new menu items to the added category
+ - [x] An admin can delete category with all its menu items
+ - [x] An admin can edit a category by ONLY adding new menu items to its pre-existing menu items
+ - [x] Back button in *AdminPage* routes back to *MenuPage* with all the modifications done from *AdminPage* is updated in *MenuPage*
+ - [x] Login form validation -- email and password have to be entered to login. Email and password has to be validated from users data cached in local storage.
+ - [x] Category and MenuItem forms validation -- at least a name of category and a name of menu item has to be entered in order to updated the data in admin page. 
 
-## Available Scripts
+## Valid credentials for login
 
-In the project directory, you can run:
+ - Admin user: Email: hamed.farag@gmail.com Password: 1234
+ - User: Email: maha.elleci@gmail.com Password: 1234 
 
-### `npm start`
+## Enhancements to be done
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# ElMenusApp
+ - [ ] Secure page routes -- /menuPage , /adminPage cannot be accessed without login 
+ 
