@@ -1,0 +1,17 @@
+.menu-item__wrapper { 
+    display: flex; 
+    padding: 1rem; 
+    align-items: center; 
+    justify-content: space-between;
+    &__info {
+      display: flex;
+      flex-direction: column;
+    }   
+    &__price {
+        padding: 0.5rem;
+        color: #e5533a; 
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+}

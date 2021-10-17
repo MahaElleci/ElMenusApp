@@ -1,45 +1,28 @@
-import React, { useState } from "react";
 import { Button, Form } from "semantic-ui-react";
-import { useHistory } from "react-router";
+
 import "./styles.scss";
 
-const LoginForm = () => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  let history = useHistory();
-  const handleEmailChange = (e) => {
-    setEmail(e.target.value);
-  };
-  const handlePasswordChange = (e) => {
-    setPassword(e.target.value);
-  };
-  const handleFormSubmit = () => {
-    console.log("here");
-    const allUsers = JSON.parse(localStorage.getItem("usersData"));
-    const admins = allUsers["admins"];
-    const users = allUsers["users"];
-
-    admins.find((item) => item.email === email && item.password === password) &&
-      history.push("/adminPage");
-
-    users.find((item) => item.email === email && item.password == password) &&
-      history.push("/usersPage");
-  };
+const LoginForm = ({ handleFormSubmit, handleChange, error }) => {
   return (
     <div className="loginForm-wrapper">
-      <Form onSubmit={() => handleFormSubmit()}>
-        <Form.Field>
+      <Form error={error} onSubmit={() => handleFormSubmit()}>
+        <Form.Field required>
           <label>Email</label>
           <Form.Input
-            onChange={(e) => handleEmailChange(e)}
+            onChange={(e) => handleChange(e)}
             placeholder="Email"
+            name="email"
+            error={error}
           />
         </Form.Field>
-        <Form.Field>
+        <Form.Field required>
           <label>Password</label>
           <Form.Input
-            onChange={(e) => handlePasswordChange(e)}
+            onChange={(e) => handleChange(e)}
             placeholder="Password"
+            name="password"
+            type="password"
+            error={error}
           />
         </Form.Field>
         <Button type="submit">Login</Button>

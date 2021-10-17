@@ -9,8 +9,18 @@
         color: white;
         font-size: 80px;
     } 
-    button {
-        max-width: 120px;
-
+    a {
+        padding: 1rem;
+        width: 200px;
+        background-color: white;
+        border-radius: 10px;
+        font-weight: 700;
+        font-size: 18px;
+        color: grey;
+        text-align: center;
+    } 
+    img {
+        max-width: 150px;
+        border-radius: 5px;
     }
 }

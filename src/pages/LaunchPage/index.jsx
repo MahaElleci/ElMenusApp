@@ -11,8 +11,9 @@ const LaunchPage = () => {
         localStorage.setItem("usersData", JSON.stringify(data));
       });
   }, []);
-  return (
-    <div className="launch-page">
+  return ( 
+    <div className="launch-page"> 
+    <img src="elmenus-logo.jpg"/>
       <h2>El Menus App</h2>
       <Link to={"/login"} className="nav-link">
         {" "}

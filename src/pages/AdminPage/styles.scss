@@ -1,0 +1,29 @@
+.admin-page {
+    margin-top: 4rem; 
+    .backBtn {
+        background: #e0e1e2 none;  
+        padding: 1rem; 
+        border-radius: 5px;
+        color: darkgray;
+        margin-left: 4rem;
+    } 
+    .menuItem {
+        margin-top: 2rem;
+    } 
+    .banner {
+        width: 100%; 
+        background-color: #e5533a; 
+        display: flex;
+        justify-content: space-between; 
+        padding: 1rem;
+        margin-bottom: 1rem;
+        img {
+            max-width: 150px;
+            border-radius: 5px;
+        } 
+        p {
+            color:white;
+            font-weight: 900;
+        }
+    } 
+} 

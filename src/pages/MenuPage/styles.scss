@@ -1,0 +1,23 @@
+.menu-page 
+{
+    margin-top: 4rem; 
+    .adminBtn {
+        background: #e0e1e2 none;  
+        padding: 1rem; 
+        border-radius: 5px;
+        color: darkgray;
+        float: right;
+    } 
+    .banner {
+        width: 100%; 
+        background-color: #e5533a; 
+        display: flex;
+        justify-content: space-between; 
+        padding: 1rem;
+        margin-bottom: 1rem;
+        img {
+            max-width: 150px;
+            border-radius: 5px;
+        }
+    } 
+}

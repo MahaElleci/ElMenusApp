@@ -3,7 +3,7 @@ import { BrowserRouter as Router,  Switch,
 import LaunchPage from "./pages/LaunchPage"; 
 import LoginPage from "./pages/LoginPage"; 
 import AdminPage from './pages/AdminPage'; 
-import UsersPage from './pages/UsersPage';
+import MenuPage from './pages/MenuPage';
 function App() {
   return (
     <div className="App"> 
@@ -19,7 +19,7 @@ function App() {
             <AdminPage />
           </Route> 
           <Route path="/usersPage">
-            <UsersPage />
+            <MenuPage />
           </Route> 
         </Switch> 
       </Router>
